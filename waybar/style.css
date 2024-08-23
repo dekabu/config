@@ -1,0 +1,188 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FiraCodeNerdFont;
+    /*font-size: 16px;*/
+    font-weight: 500;
+    font-feature-settings: "zero"
+}
+
+window {
+    font-size: 18px;
+    border-radius: 20px
+}
+
+window#waybar {
+    background: rgba(0,0,0,.5);
+    color: #ffffff;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    background: none;
+    border: none
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+/*button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}*/
+
+#workspaces {
+}
+
+#workspaces {
+	color: red
+}
+
+#workspaces button {
+    color: gray;
+    padding: 0 15px;
+    font-size: 22px
+}
+
+#workspaces button:hover {
+    color: white
+}
+
+#workspaces button.focused {
+    color: red;
+}
+
+#workspaces button.urgent {
+}
+
+#workspaces button.visible {
+    color: white
+}
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#clock,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio {
+    color: #ffffff;
+    font-size: 17px;
+    margin: 4px 15px 0 15px
+}
+
+#clock {
+    color: white;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    color: #8097ff;
+}
+
+#memory {
+    color: #dc7dff
+}
+
+#disk {
+    background-color: #964B00;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+#network {
+    color: #dc7dff;
+}
+
+#network.disconnected {
+    background: rgba(0,0,0,.5);
+    color: #eaf759
+}
+
+#pulseaudio {
+    color: #fa8cf6;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    color: #fa8cf6;
+    margin-right: 30px
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}

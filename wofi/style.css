@@ -1,0 +1,14 @@
+* {
+	font-family: FiraCode;
+	font-size: 18px;
+}
+
+#window {
+	border-radius: 10px;
+}
+
+
+#input {
+	border-radius: 10px;
+	min-height: 50px;
+}

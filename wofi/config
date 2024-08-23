@@ -1,0 +1,9 @@
+allow_images=true
+image_size=50
+hide_scroll=true
+prompt=
+term=kitty
+no_actions=true
+width=30%
+insensitive=false
+print_command=true
